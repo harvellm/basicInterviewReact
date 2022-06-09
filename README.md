@@ -1,70 +1,17 @@
-# Getting Started with Create React App
+# Instructions:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Please clone (or download as a zip) this repository.  It is assumed that, since you are applying for a position which works with rReact applications, you will have Node (and, obviously, npm) installed. If this is not the case on the machine you are working on now, please let the interviewer know and this can be done quite quickly. This interview will need to be completed in view of the interviewer or interview team so the ability to share your screen is imperative.
 
-## Available Scripts
+This portion of the interview breaks down into two parts: one is a mandatory function hydration and another, secondary part, presents you with the opportunity to choose any/all of a set of tasks. Keep in mind that you will have approximately 40 - 45 minutes (there is no timer but we do want to allow some time for discussion afterward) to complete these tasks.  
 
-In the project directory, you can run:
+Within the App.js file you will find a simple test harness.  A number can be typed into the input box and it will be evaluated in the onBlur event.  You can just run the app with npm start once you have installed the necessary npm modules as normal.
 
-### `npm start`
+The mandatory step which must be completed first is the following:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Inside the number-utils.js module you will find an empty function with instructions, complete this function.  You may use the provided form (mentioned above) to test your work or you can write some other code to do it. For the purposes of timeliness in testing this, the following numbers are prime: 2,3,5,7,11,13,17,19,23.  Therefore, the following numbers in the same range are *not* prime: 4,6,8,9,10,12,14,15,16,18,20,21,22,24.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Once you have completed this mandatory step, here are several options to modify the application. Please choose among them for as many as you feel you can code in the allotted timeframe:
 
-### `npm test`
+- The testing for primeness can carry with it a large computational burden for larger numbers even with careful algorithmic optimization. Please implement the memoization pattern (caching) in the algorithm so that the computation will not be required in the case that the numbers primeness has previously been determined.  For this consider implementing with a dictionary or `Map` object.  The use of private member variables should be strongly considered.   N.B., this will require changes in a few places throughout the application but the effort should be fairly minimal.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Modify the application to accept an array of numbers to test and, upon completion, return an array of results with each member of the array having shape of `{TestNumber : XXXX, IsPrime: true|false}` (where "XXXX" is the actual number to test and where the property "IsPrime" is _either_ the value true or false).  The results of this can be displayed in a table or just output to the console, depending upon the time left.

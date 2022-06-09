@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "./number-utils";
+import React, { useState } from "react";
+import NumUtil from "./number-utils";
 
 function App() {
+  const numUtils = new NumUtil();
+
+  const [value, setValue] = useState("");
+  const [isPrime, setIsPrime] = useState(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <input
+          value={value}
+          onChange={(e) => setValue(e.target.value)}
+          onBlur={() => setIsPrime(numUtils.IsPrime(value))}
+        />
+        <div>{`Is Prime? ${isPrime}`}</div>
+      </div>
     </div>
   );
 }
