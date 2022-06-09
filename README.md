@@ -1,6 +1,6 @@
 # Instructions:
 
-Please clone (or download as a zip) this repository.  It is assumed that, since you are applying for a position which works with rReact applications, you will have Node (and, obviously, npm) installed. If this is not the case on the machine you are working on now, please let the interviewer know and this can be done quite quickly. This interview will need to be completed in view of the interviewer or interview team so the ability to share your screen is imperative.
+Please clone (or download as a zip) this repository.  It is assumed that, since you are applying for a position which works with React applications, you will have Node (and, obviously, npm) installed. If this is not the case on the machine you are working on now, please let the interviewer know and this can be done quite quickly. This interview will need to be completed in view of the interviewer or interview team so the ability to share your screen is imperative.
 
 This portion of the interview breaks down into two parts: one is a mandatory function hydration and another, secondary part, presents you with the opportunity to choose any/all of a set of tasks. Keep in mind that you will have approximately 40 - 45 minutes (there is no timer but we do want to allow some time for discussion afterward) to complete these tasks.  
 
