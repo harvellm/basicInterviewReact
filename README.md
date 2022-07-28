@@ -4,7 +4,7 @@ Please clone (or download as a zip) this repository.  It is assumed that, since 
 
 This portion of the interview breaks down into two parts: one is a mandatory function hydration and another, secondary part, presents you with the opportunity to choose any/all of a set of tasks. Keep in mind that you will have approximately 40 - 45 minutes (there is no timer but we do want to allow some time for discussion afterward) to complete these tasks.  
 
-Within the App.js file you will find a simple test harness.  A number can be typed into the input box and it will be evaluated in the onBlur event.  You can just run the app with npm start once you have installed the necessary npm modules as normal.
+Within the App.js file you will find a simple test harness.  A number can be typed into the input box and checked by clicking the button on the form.  You can just run the app with npm start once you have installed the necessary npm modules as normal.
 
 The mandatory step which must be completed first is the following:
 
