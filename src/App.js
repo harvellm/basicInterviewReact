@@ -15,8 +15,8 @@ function App() {
         <input
           value={value}
           onChange={(e) => setValue(e.target.value)}
-          onBlur={() => setIsPrime(numUtils.IsPrime(value))}
         />
+        <div><button onClick={() => setIsPrime(numUtils.IsPrime(value))}>Check</button></div>
         <div>{`Is Prime? ${isPrime}`}</div>
       </div>
     </div>
